@@ -52,5 +52,5 @@ student.pre("save",async function(next){
     }
     next();
 })
-const Register=new mongoose.model("Student",student);
+const Register=new mongoose.model("Ashish",student);
 module.exports=Register;
