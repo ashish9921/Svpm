@@ -61,7 +61,7 @@ app.post('/submit', async(req,res)=> {
 
         const result=await studentin.save();
         res.status(201).render('index.hbs',{
-            Name1:useremail.name
+            Name1:req.body.sname,
         })
         
       
