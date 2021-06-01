@@ -203,8 +203,8 @@ footer{
     .navbar-brand{
         padding: 0px;
         margin: 0px;
-        position:absolute;
-        left: 100px; 
+        position:relative;
+        left: 0px; 
     }
 
 
