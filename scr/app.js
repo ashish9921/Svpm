@@ -60,7 +60,9 @@ app.post('/submit', async(req,res)=> {
         // conver password to hashing
 
         const result=await studentin.save();
-        res.status(201).render('Home.hbs');
+        res.status(201).render('index.hbs',{
+            Name1:useremail.name,
+        });
         console.log(result)
       
     }catch(err){
@@ -84,7 +86,9 @@ app.post('/login', async(req,res)=> {
 
 
       if (ismach){
-          res.status(201).render('Home.hbs')
+          res.status(201).render('index.hbs',{
+          Name1:useremail.name,
+          })
 
       }else{
 
