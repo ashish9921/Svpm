@@ -62,6 +62,10 @@ app.post('/submit', async(req,res)=> {
         const result=await studentin.save();
         res.status(201).render('index.hbs',{
             Name1:req.body.sname,
+            
+            Name3:req.body.email,
+            Name4:req.body.mobile,
+           
         })
         
       
@@ -87,7 +91,9 @@ app.post('/login', async(req,res)=> {
 
       if (ismach){
           res.status(201).render('index.hbs',{
-          Name1:useremail.name,
+            Name1:useremail.name,
+            Name3:useremail.email,
+            Name4:useremail.mobilno,
           })
 
       }else{
